@@ -3,6 +3,7 @@ import 'package:provider/provider.dart';
 
 import './add_place_screen.dart';
 import '../providers/beautiful_places.dart';
+import './place_detail_screen.dart';
 
 class PlacesListScreen extends StatelessWidget {
   @override
@@ -44,7 +45,13 @@ class PlacesListScreen extends StatelessWidget {
                                             .toUpperCase(),
                                         style: TextStyle(fontSize: 20),
                                       ),
-                                      onTap: () {},
+                                      subtitle: Text(
+                                        beautifulPlaces.items[i].location.address,
+                                        style: TextStyle(fontSize: 10, fontStyle: FontStyle.italic , color: Theme.of(context).accentColor)),
+                                      onTap: () {
+                                        Navigator.of(context).pushNamed(PlaceDetailScreen.route_name,
+                                        arguments: beautifulPlaces.items[i].id);
+                                      },
                                     ),
                                     itemCount: beautifulPlaces.items.length,
                                   ),
