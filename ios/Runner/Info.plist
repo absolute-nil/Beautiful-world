@@ -32,7 +32,13 @@
 	<string>Please allow camera permission to upload image</string>
 	<key>NSMicrophoneUsageDescription</key>
 	<string>Please allow mic permission to upload video</string>
+	<key>NSLocationWhenInUseUsageDescription</key>
+	<string>Please allow access to your location</string>
+	<key>NSLocationAlwaysUsageDescription</key>
+	<string>Please allow access to maps</string>
 	<key>UISupportedInterfaceOrientations</key>
+	<key>io.flutter.embedded_views_preview</key>
+	<true/>
 	<array>
 		<string>UIInterfaceOrientationPortrait</string>
 		<string>UIInterfaceOrientationLandscapeLeft</string>
