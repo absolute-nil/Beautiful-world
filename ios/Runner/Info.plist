@@ -26,6 +26,12 @@
 	<string>LaunchScreen</string>
 	<key>UIMainStoryboardFile</key>
 	<string>Main</string>
+	<key>NSPhotoLibraryUsageDescription</key>
+	<string>Please allow gallery permission to upload image</string>
+	<key>NSCameraUsageDescription</key>
+	<string>Please allow camera permission to upload image</string>
+	<key>NSMicrophoneUsageDescription</key>
+	<string>Please allow mic permission to upload video</string>
 	<key>UISupportedInterfaceOrientations</key>
 	<array>
 		<string>UIInterfaceOrientationPortrait</string>
