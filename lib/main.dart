@@ -4,6 +4,7 @@ import 'package:provider/provider.dart';
 import './providers/beautiful_places.dart';
 import './screens/places_list_screen.dart';
 import './screens/add_place_screen.dart';
+import './screens/place_detail_screen.dart';
 
 void main() => runApp(MyApp());
 
@@ -20,7 +21,8 @@ class MyApp extends StatelessWidget {
         ),
         home: PlacesListScreen(),
         routes: {
-          AddPlaceScreen.route_name : (ctx) =>AddPlaceScreen()
+          AddPlaceScreen.route_name : (ctx) =>AddPlaceScreen(),
+          PlaceDetailScreen.route_name: (ctx) => PlaceDetailScreen()
         },
       ),
     );
